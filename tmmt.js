@@ -70,4 +70,4 @@
             getHashFromQuery: getHashFromQuery
         }
     }());
-}((jQuery || $), (YourOwnNameSpace || {})));
+}((jQuery || $), (window.YourOwnNameSpace || window)));
