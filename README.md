@@ -1,7 +1,7 @@
 TMMT templating class
 =============
 
-When mustache was to big, just a really Tiny-Mini_Micro Templating class :)
+When mustache was too big, then we need just a really Tiny-Mini_Micro Templating class :)
 
 V.1.0
 ---
