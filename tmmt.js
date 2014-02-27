@@ -16,9 +16,10 @@
          */
 
         function apply(template, hash, transformHash) {
-            $.each(hash, function(index, value) {
+            Object.keys(hash).forEach(function(key, index) {
+                var value = hash[key];
                 exp = new RegExp('\{' + index + '\}', 'g');
-                template = template.replace(exp, (transformHash) ? (typeof transformHash[index] === 'function' ? transformHash[index](value) : value) : value);
+                template = template.replace(exp, (transformHash) ? (typeof transformHash[key] === 'function' ? transformHash[key](value) : value) : value);
             });
 
             return template;
@@ -36,7 +37,8 @@
             var querystring = '';
 
             charset = charset || DEFAULT_CHARSET;
-            $.each(hash, function(key, value) {
+            Object.keys(hash).forEach(function(key, index) {
+                var value = hash[key];
                 querystring += ((querystring.length > 0) ? charset.charAt(1) : '') + key + charset.charAt(2) + value;
             });
 
