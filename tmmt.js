@@ -1,4 +1,4 @@
-(function($, NS) {
+(function(NS) {
     /**
      * TODO: REMOVE ALL JQUERY THINGS!!!!
      * @description microtemplating class
@@ -73,4 +73,4 @@
             getHashFromQuery: getHashFromQuery
         }
     }());
-}((jQuery || $), (window.YourOwnNameSpace || window)));
+}((window.YourOwnNameSpace || window)));
