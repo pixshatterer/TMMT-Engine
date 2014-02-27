@@ -1,5 +1,6 @@
 (function($, NS) {
     /**
+     * TODO: REMOVE ALL JQUERY THINGS!!!!
      * @description microtemplating class
      * 
      */
