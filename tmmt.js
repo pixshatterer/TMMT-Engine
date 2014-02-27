@@ -4,7 +4,7 @@
      * @description microtemplating class
      * 
      */
-    (NS.TemplateManager = function() {
+    (NS.TMMT = function() {
         var DEFAULT_CHARSET = '?&=';
         /**
          * @description apply the transformation object to the template and returns a string
